@@ -510,6 +510,58 @@ img {
 .foot-icon {
     fill: var(--cloud-color);
 }
+.social-wrap {
+    margin-right: 80px;
+}
+/* Form */
+.form-text {
+    color: var(--white-color);
+    font-weight: 500;
+    margin-bottom: 16px;
+}
+.foot-form {
+    display: flex;
+    gap: 24px;
+}
+.subscribe-input {
+    width: 264px;
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid var(--white-color);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    background-color: transparent;
+    padding-left: 16px;
+    color: var(--white-color);
+    font-size: 12px;
+    letter-spacing: 0.04em;;
+}
+.subscribe-input::placeholder {
+    color: var(--white-color);
+}
+.foot-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    padding: 8px 24px;
+    min-width: 165px;
+    height: 40px;
+    font-weight: 500;
+    letter-spacing: 0.64px;
+    border-radius: 4px;
+    background-color: var(--iris-color);
+    border: none;
+    color: var(--white-color);
+    text-align: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.foot-btn:hover,
+.foot-btn:focus {
+    background-color: var(--ocean-color);
+}
+.subs-icon {
+    fill: var(--white-color);
+}
 /**
   |============================
   | Modal
@@ -543,6 +595,7 @@ img {
         0px 1px 3px 0px rgba(0, 0, 0, 0.12),
         0px 1px 1px 0px rgba(0, 0, 0, 0.14);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 72px 24px 24px;
 }
 .backdrop.is-hidden .modal {
     opacity: 0;
@@ -576,4 +629,118 @@ img {
 .modal-btn:hover .modal-icon,
 .modal-btn:focus .modal-icon {
     fill: var(--white-color);
+}
+.form-container {
+    margin-bottom: 8px;
+}
+.modal-text {
+    color: var(--navy-blue-color);
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 16px;
+}
+.label-field {
+    display: block;
+    color: var(--light-slate-color);
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.48px;
+    margin-bottom: 4px;
+}
+.input-container {
+    position: relative;
+}
+.modal-input {
+    width: 100%;
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid var(--navyblue-modal);
+    padding-left: 38px;
+    background-color: transparent;
+    outline: transparent;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-input:focus {
+    border-color: var(--iris-color);
+}
+.form-icon {
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    fill: var(--navy-blue-color);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-input:focus + .form-icon {
+    fill: var(--iris-color);
+}
+.comment-container {
+    margin-bottom: 16px;
+}
+.comment-text {
+    width: 100%;
+    height: 120px;
+    border-radius: 4px;
+    border: 1px solid var(--navyblue-modal);
+    padding: 8px 16px;
+    resize: none;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.48px;
+    color: var(--navyblue-modal);
+    background-color: transparent;
+    outline: transparent;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.comment-text:focus {
+    border-color: var(--iris-color);
+}
+.agreement-container {
+    margin-bottom: 24px;
+}
+.privacy-label {
+    color: var(--light-slate-color);
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.48px;
+}
+.custom-checkbox {
+    width: 16px;
+    height: 16px;
+    border-radius: 2px;
+    border: 1px solid var(--navyblue-modal);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.default-checkbox:checked + .privacy-label > .custom-checkbox {
+    border: none;
+    background-color: var(--ocean-color);
+}
+.icon-check {
+    fill: var(--cloud-color);
+}
+.privacy-link {
+    color: var(--iris-color);
+}
+.send-btn {
+    min-width: 169px;
+    height: 56px;
+    padding: 16px 32px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 4px;
+    background-color: var(--iris-color);
+    border: none;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    color: var(--white-color);
+    text-align: center;
+    font-weight: 500;
+    letter-spacing: 0.64px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.send-btn:hover,
+.send-btn:focus {
+    background-color: var(--ocean-color);
 }
